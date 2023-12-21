@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/transfuse.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Purity Healing Hub</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="form">
+      <div class="form-container">
+        <!-- Sidebar start -->
+        <div class="form-sidebar">
+          <div class="step active">
+            <div class="circle">1</div>
+            <div class="step-content">
+              <span>Paso 1</span>
+              <b>Información Personal</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">2</div>
+            <div class="step-content">
+              <span>Paso 2</span>
+              <b>Antecedentes</b>
+            </div>
+          </div>
+          <div class="step">
+            <div class="circle">3</div>
+            <div class="step-content">
+              <span>Paso 3</span>
+              <b>Diagnóstico</b>
+            </div>
+          </div>
+        <!-- Sidebar end -->
+        <!-- * Step 1 start -->
+        <div class="stp step-1">
+          <div class="header">
+            <h1 class="title">Información personal</h1>
+            <p class="exp">
+              Por favor, ingrese sus datos personales para continuar con la consulta.
+            </p>
+          </div>
+          <form>
+            <div class="label">
+              <label for="nombre">Nombre</label>
+              <p class="error">Campo Obligatorio</p>
+            </div>
+            <input
+              required
+              type="text"
+              id="nombre"
+              placeholder="Akasha Ruiz"
+            />
+            <div class="label">
+              <label for="dpi">DPI (CUI)</label>
+              <p class="error">Campo Obligatorio</p>
+            </div>
+            <input
+              required
+              type="number"
+              id="dpi"
+              placeholder="1234567890101"
+            />
+            <div class="label">
+              <label for="gender">Sexo</label>
+              <p class="error">Campo Obligatorio</p>
+            </div>
+            <input
+              required
+              type="text"
+              id="gender"
+              placeholder="Femenino"
+            />
+            <div class="label">
+                <label for="fecha">Fecha de ingreso a la base de datos</label>
+                <p class="error">Campo Obligatorio</p>
+              </div>
+              <input
+                required
+                type="date"
+                id="fecha"
+                placeholder="dd/mm/aa"
+              />
+              <div class="label">
+                <label for="raza">Raza</label>
+                <p class="error">Campo Obligatorio</p>
+              </div>
+              <input
+                required
+                type="text"
+                id="raza"
+                placeholder="Desconocida / Blanca / Negra / Mestiza"
+              />
+              <div class="label">
+                <label for="procedencia">Procedencia</label>
+                <p class="error">Campo Obligatorio</p>
+              </div>
+              <input
+                required
+                type="text"
+                id="procedencia"
+                placeholder="Urbana / Rural"
+              />
+              <div class="label">
+                <label for="birth">Fecha de nacimiento</label>
+                <p class="error">Campo Obligatorio</p>
+              </div>
+              <input
+                required
+                type="date"
+                id="birth"
+                placeholder="dd/mm/aa"
+              />
+              <div class="label">
+                <label for="estatura">Estatura (mts)</label>
+                <p class="error">Campo Obligatorio</p>
+              </div>
+              <input
+                required
+                type="number"
+                id="estatura"
+                placeholder="1.50"
+              />
+              <div class="label">
+                <label for="peso">Peso (Kilos)</label>
+                <p class="error">Campo Obligatorio</p>
+              </div>
+              <input
+                required
+                type="number"
+                id="peso"
+                placeholder="46"
+              />
+              <div class="label">
+                <label for="indice">Índice de masa corporal (Kgs/m2)</label>
+                <p class="error">Campo Obligatorio</p>
+              </div>
+              <input
+                required
+                type="number"
+                id="indice"
+                placeholder="18.5"
+              />
+          </form>
+          <div class="btns">
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 1 end -->
+        <!-- * Step 2 start -->
+        <div class="stp step-2">
+            <div class="header">
+                <h1 class="title">Antecedentes</h1>
+                <p class="exp">
+                  Por favor, ingrese los datos que se le solicitan.
+                </p>
+              </div>
+              <form>
+                <div class="label">
+                  <label for="primeraC">Fecha primera consulta</label>
+                  <p class="error">Campo Obligatorio</p>
+                </div>
+                <input
+                  required
+                  type="date"
+                  id="primeraC"
+                  placeholder="dd/mm/aa"
+                />
+                <div class="label">
+                  <label for="meses">Meses en demora para consultar</label>
+                  <p class="error">Campo Obligatorio</p>
+                </div>
+                <input
+                  required
+                  type="number"
+                  id="meses"
+                  placeholder="2"
+                />
+              </form>
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 2 end -->
+        <!-- * Step 3 start -->
+        <div class="stp step-3">
+            <div class="header">
+              <h1 class="title">Diagnóstico</h1>
+              <p class="exp">
+                Por favor, ingrese sus datos personales para continuar con la consulta.
+              </p>
+            </div>
+            <form>
+              <div class="label">
+                <label for="nombre">¿Enfermedad detectada?</label>
+                <p class="error">Campo Obligatorio</p>
+              </div>
+              <input
+                required
+                type="text"
+                id="nombre"
+                placeholder="Por paciente / Autoexamen / Consulta"
+              />
+            </form>
+          <div class="btns">
+            <button class="prev-stp" type="button">Go Back</button>
+            <button class="next-stp" type="submit">Next Step</button>
+          </div>
+        </div>
+        <!-- Step 3 end -->
+        
+        <!-- Step 5 start -->
+        <div class="stp step-5">
+          <div class="header">
+            <h1 class="title">¡Gracias!</h1>
+            <p class="exp">
+              Gracias por llenar el formulario médico, tus resultados serán notificados muy pronto
+            </p>
+          </div>
+          <button class="next-stp"></button>
+        </div>
+        <!-- Step 5 end -->
+      </div>
+    </div>
+  </body>
+</html>
